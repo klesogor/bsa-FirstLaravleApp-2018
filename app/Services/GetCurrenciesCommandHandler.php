@@ -2,10 +2,14 @@
 
 namespace App\Services;
 
+use App\Traits\WorksWithCoinsRepository;
+
 class GetCurrenciesCommandHandler
 {
+    use WorksWithCoinsRepository;
+
     public function handle(): array
     {
-        // todo implement
+        return $this->repository->findAll();
     }
 }
