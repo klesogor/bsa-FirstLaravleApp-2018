@@ -6,6 +6,11 @@ class CurrencyPresenter
 {
     public static function present(Currency $currency): array
     {
-        // todo implement
+        return [
+            'id' => $currency->getId(),
+            'name' => $currency->getName(),
+            'price' => $currency->getPrice(),
+            'img' => $currency->getImageUrl()
+        ];
     }
 }
