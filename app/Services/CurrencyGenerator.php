@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 
 class CurrencyGenerator
 {
-    const LINK_BASE = 'https://s2.coinmarketcap.com/static/img/coins/128x128/';
+    const LINK_BASE = 'https://s2.coinmarketcap.com/static/img/coins/64x64/';
 
     public static function generate(): array
     {

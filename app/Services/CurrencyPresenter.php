@@ -10,7 +10,8 @@ class CurrencyPresenter
             'id' => $currency->getId(),
             'name' => $currency->getName(),
             'price' => $currency->getPrice(),
-            'img' => $currency->getImageUrl()
+            'img' => $currency->getImageUrl(),
+            'daily_change' => $currency->getDailyChangePercent()
         ];
     }
 }

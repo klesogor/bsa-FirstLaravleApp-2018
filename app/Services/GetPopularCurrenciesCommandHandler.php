@@ -18,6 +18,7 @@ class GetPopularCurrenciesCommandHandler
                 return $item->getPrice();
             })
             ->take($count)
+            ->values()
             ->all();
     }
 }
