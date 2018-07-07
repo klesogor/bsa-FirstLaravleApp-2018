@@ -11,7 +11,7 @@ class GetMostChangedCurrencyCommandHandler
     {
         return $this->getWrappedCoins()
             ->sortByDesc(function($item) {
-                return $item->getDailyChangePercent();
+                return abs($item->getDailyChangePercent());
             })
             ->first();
     }
